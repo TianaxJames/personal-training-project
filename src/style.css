@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background: rgb(69, 61, 2);
+  background: rgb(54, 4, 4);
 }
 
 .container {
@@ -55,9 +55,44 @@ header a {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
 }
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.img-responsive {
+  max-width: 100%;
+}
+main img {
+  max-width: 500px;
+}
+main {
+  background-color: white;
+}
+main h2 {
+  font-weight: 700px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: black;
+  opacity: 0.4;
+  text-transform: uppercase;
+}
+main h3 {
+  font-weight: 700px;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
@@ -65,7 +100,6 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0;
 }
 footer h3 {
   font-weight: 700;
@@ -106,5 +140,12 @@ section {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
